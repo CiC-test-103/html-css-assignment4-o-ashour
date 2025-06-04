@@ -265,6 +265,11 @@ h2 {
     padding: 0.9em;
     border-radius: 32px;
   }
+
+  .summary button:hover {
+    background: linear-gradient(var(--gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+    cursor: pointer;
+  }
 }
 
 /** Attribution CSS **/
