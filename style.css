@@ -184,8 +184,87 @@ h2 {
 }
 
 .attribution {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   margin-top: 2em;
   margin-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--clr-paleBlue);
+  }
+  main {
+    display: flex;
+    font-size: var(--font-paragraph);
+    background-color: var(--clr-white);
+    border-radius: 28px;
+    max-width: 736px;
+    margin-top: 11em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .your-result {
+    flex: 1;
+    border-radius: 28px;
+    padding: 40px;
+    padding-bottom: 36px;
+  }
+
+  .your-result h2 {
+    margin-top: initial;
+  }
+  
+  .total-score {
+    width: 202px;
+    padding: 2.5em;
+    margin: 1.5em auto 0 auto;
+    border-radius: 50%;
+    line-height: 1.25;
+  }
+
+  .total-score blockquote {
+    font-size: 4.5rem;
+  }
+
+  .description {
+    line-height: 1.25;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    max-width: 250px;
+    margin-top: 0.9em;
+  }
+
+  .summary {
+    flex: 1;
+    margin-top: initial;
+    padding: 40px;
+    padding-bottom: 36px;
+  }
+
+  .summary ul {
+    margin-bottom: 1.75em;
+  }
+
+  .summary ul li {
+    margin-top: 1.25em;
+  }
+
+  .summary button {
+    padding: 0.9em;
+    border-radius: 32px;
+  }
 }
 
 /** Attribution CSS **/
