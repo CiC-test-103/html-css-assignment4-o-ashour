@@ -47,6 +47,146 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+body {
+  font-family: var(--fs-base);
+  font-weight: var(--fw-regular);
+}
+
+h2 {
+  /* font-size: 1.125rem; */
+  font-size: var(--font-paragraph);
+}
+
+.your-result {
+  background: linear-gradient(var(--gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+  color: var(--clr-lightLavender);
+  border-radius: 0px 0px 28px 28px;
+  padding: 0.5em 28px 1em 28px;
+}
+
+.your-result h2 {
+  margin-top: 0.55em;
+  text-align: center;
+}
+
+.total-score {
+  background: linear-gradient(var(--gra-violetBlue), var(--gra-persianBlue));
+  width: 138px;
+  padding: 1em;
+  margin: 1em auto 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  /* color: #8677ff; */
+  color: hsl(252, 100%, 80%);;
+}
+
+.total-score blockquote {
+  font-size: 3.5rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-black);
+}
+
+.description {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.description h1 {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+}
+
+.description p {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+.summary {
+  padding: 0.5em 28px 1em 28px;
+  margin-top: 1em;
+}
+
+.summary ul {
+  list-style-type: none;
+  margin-bottom: 1.125em;
+  padding-left: 0;
+}
+
+.summary ul li {
+  padding: 0.75em;
+  border-radius: 10px;
+  margin-top: 1.5em;
+}
+
+.summary ul li img {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 0.75em;
+}
+
+.summary ul li .score {
+  float: right;
+}
+
+.summary ul li:first-child .title {
+  color: var(--clr-lightRed);
+}
+
+.summary ul li:first-child {
+  background-color: hsla(0, 100%, 67%, 0.052);
+}
+
+.summary ul li:nth-child(2) .title {
+  color: var(--clr-orangeYellow);
+}
+
+.summary ul li:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.052);
+}
+
+.summary ul li:nth-child(3) .title {
+  color: hsl(166, 100%, 35%); /* variable for green teal seems incorrect */
+}
+
+.summary ul li:nth-child(3) {
+  background-color: hsla(166, 100%, 35%, 0.052);
+}
+
+.summary ul li:nth-child(4) .title {
+  color: var(--clr-cobaltBlue);
+}
+
+.summary ul li:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.052);
+}
+
+.summary ul li .score {
+  color: #9699a8;
+  font-weight: var(--fw-bold);
+}
+
+.summary ul li .score span {
+  color: initial;
+  margin-right: 0.25em;
+}
+
+.summary button {
+  border: none;
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 28px;
+  background-color: var(--clr-darkGrayBlue);
+  color: var(--clr-white);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+}
+
+.attribution {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }

@@ -15,14 +15,16 @@
     <section class="your-result">
       <h2>Your Result</h2>
       <div class="total-score">
-        <span>76</span>
-        of 100
+        <blockquote>76</blockquote>
+        <span>of 100</span>
       </div>
 
-      <h1>Great</h1>
-      <p class="description">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>  
+      <div class="description">
+        <h1>Great</h1>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>  
+      </div>
     </section>
     
     <section class="summary">
@@ -30,46 +32,45 @@
         Summary
       </h2>
 
-      <table>
-        <tbody>
-          <tr>
-            <th scope="row">
-              <span>
-                <img src="/assets/images/icon-reaction.svg" alt="lightning-bolt-icon" />
-                Reaction
-              </span>
-            </th>
-            <td><span>80</span> / 100</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span>
-                <img src="/assets/images/icon-memory.svg" alt="brain-icon" />
-                Memory
-              </span>          
-            </th>
-            <td><span>92</span> / 100</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span>
-                <img src="/assets/images/icon-verbal.svg" alt="speech-bubble-icon" />
-                Verbal
-              </span>  
-            </th>
-            <td><span>61</span> / 100</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span>
-                <img src="/assets/images/icon-visual.svg" alt="open-eye-icon" />
-                Visual
-              </span>  
-            </th>
-            <td><span>72</span> / 100</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- consider trying to change to generic divs if can't get to work semantically -->
+      <ul class="attributes">
+        <li>
+          <span class="title">
+            <img src="/assets/images/icon-reaction.svg" alt="lightning-bolt-icon" />
+            Reaction
+          </span>
+          <span class="score">
+            <span>80</span> / 100
+          </span>
+        </li>
+        <li>
+          <span class="title">
+            <img src="/assets/images/icon-memory.svg" alt="brain-icon" />
+            Memory
+          </span>
+          <span class="score">
+            <span>92</span> / 100
+          </span>
+        </li>
+        <li>
+          <span class="title">
+            <img src="/assets/images/icon-verbal.svg" alt="speech-bubble-icon" />
+            Verbal
+          </span>
+          <span class="score">
+            <span>61</span> / 100
+          </span>
+        </li>
+        <li>
+          <span class="title">
+            <img src="/assets/images/icon-visual.svg" alt="open-eye-icon" />
+            Visual
+          </span>
+          <span class="score">
+            <span>72</span> / 100
+          </span>
+        </li>
+      </ul>
 
       <button>
         Continue
@@ -78,7 +79,7 @@
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Omar Ashour</a>.
   </div>
 </body>
 </html>
